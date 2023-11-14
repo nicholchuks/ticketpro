@@ -1,0 +1,121 @@
+.recentview {
+  width: 100%;
+  /* padding: 24px 16px 16px; */
+  padding: 24px 0 16px;
+  border-top: 1px solid rgb(191, 191, 191);
+}
+
+.viewed_h2 {
+  text-align: center;
+  font-size: 23px;
+  position: relative;
+  margin: 0px;
+  padding-bottom: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.viewed_h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 0px;
+  display: block;
+  width: 40px;
+  border-bottom: 4px solid rgb(167, 51, 255);
+}
+
+.recentview .recent_viewed_content {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 1016px) {
+  .recentview .recent_viewed_content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .recentview .recent_viewed_content {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+  }
+}
+
+.recent_viewed_content a {
+  display: flex;
+  /* flex-basis: 300px; */
+  flex-basis: 30%;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin-bottom: 8px;
+  padding: 8px 20px 8px 4px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 500px;
+  color: rgb(18, 18, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recent_viewed_content .recent_main_content {
+  display: flex;
+  align-items: center;
+}
+
+.recent_viewed_content a img {
+  width: 36px;
+  height: 36px;
+  margin: 0px 8px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.recent_viewed_content span {
+  font-weight: bold;
+}
+
+.recent_viewed_content button svg {
+  margin-left: 32px;
+  padding: 2px;
+  border: 1px solid rgb(18, 18, 18);
+  border-radius: 50%;
+  color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+
+.advert {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.advert_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 66px;
+  overflow: hidden;
+}
+
+.advert .advert_content img {
+  width: 728px;
+  height: auto;
+  object-fit: contain;
+}
+
+.advert_content .advert_p {
+  margin: 4px 0px 1em 0px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(18, 18, 18);
+}

@@ -1,0 +1,7 @@
+.content_item_main p {
+  display: block;
+  padding: 0px 12px;
+  margin-top: 8px;
+  color: rgb(18, 18, 18);
+  font-size: 14px;
+}

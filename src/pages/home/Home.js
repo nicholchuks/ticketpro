@@ -1,7 +1,12 @@
-import React from "react";
+import Hero from "../../components/hero/Hero";
+// import RecentView from "../../components/recentview/RecentView";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <section className="home">
+      <Hero />
+    </section>
+  );
 };
 
 export default Home;

@@ -1,0 +1,15 @@
+.content_item_img .discover_img {
+  display: block;
+  width: 291px;
+  height: 164px;
+  object-fit: cover;
+}
+
+.content_item_main .blue {
+  display: block;
+  margin-top: 8px;
+  color: rgb(2, 77, 223);
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
